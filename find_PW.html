@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW 찾기</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+body {
+    min-height: 100vh;
+
+    background: -webkit-gradient(linear, left bottom, right top, from(#92b5db), to(#1d466c));
+    background: -webkit-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%);
+    background: -moz-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%);
+    background: -o-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%);
+    background: linear-gradient(to top right, #92b5db 0%, #1d466c 100%);
+  } 
+
+  .input-form {
+    max-width: 680px;
+
+    margin-top: 80px;
+    padding: 32px;
+
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
+  }
+  
+  .box1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .btn-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .btn-elem {
+      width: 80px;
+      height: 80px;
+  } 
+ 
+</style>
+<body>
+    <div class="container">
+        <div class="input-form-backgroud row">
+            <div class="input-form col-md-12 mx-auto">   
+                <h4 class="mb-3">PW 찾기</h4>
+                <form class="validation-form" novalidate>
+
+                    <div class="mb-3">
+                        <label for="ID">아이디</label>
+                        <input type="ID" class="form-control" id="ID" required placeholder="아이디를 입력해주세요">
+                        <div class="invalid-feedback">
+                          ID를 입력해주세요.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email">이메일</label>
+                        <input type="email" class="form-control" id="email" 
+                        required placeholder="이메일을 입력해주세요">
+                        <div class="invalid-feedback">
+                          이메일을 입력해주세요.
+                        </div>
+
+                    </div>
+                    
+                    <div class="mb-3" id="Code">
+                        <label for="email">Code</label>
+                        <div class="box1">
+                        <input type="Code" class="form-control" id="Code" 
+                            required placeholder="Code를 입력해주세요">
+                            <div class="invalid-feedback">
+                            Code를 입력해주세요.
+                            </div>
+                            
+                            <button type="button" class="btn btn-dark">전송</button>
+                            
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-dark btn-lg btn-block" type="submit">확인</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
