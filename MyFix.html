@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPageFix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="MyFix_style.css">
+</head>
+<body>
+    <MainBody>
+        <div class="MyForm">
+            <form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
+             <!--프로필 사진-->
+
+             <div>       
+                <input type="file" name = "profile" class=" MyPic">
+            </div>
+
+            <!-- 사용자 아이디 -->
+            <div>
+                <label>사용자 아이디 : <input type="text" class="MyID" value="user-ID" readonly></label>
+            </div>
+            
+
+            <!-- 사용자 비밀번호 -->
+            <div>
+                <label>사용자 비밀번호 : <input type="password" class="MyPW" value="user-password"></label>
+            </div>
+
+            <!-- 사용자 이름 -->
+            <div>
+                <label>사용자 이름 : <input type="text" class="MyName" value="user-name"></label>
+            </div>
+
+             <!-- 사용자 생년월일 -->
+            <div>
+                <label>생년월일 : <input type="date">
+                </label>
+            </div>
+        
+            <!-- 사용자 핸드폰번호 -->
+            <div>
+                <label>사용자 연락처 : <input type="tel" class="MyPhone" placeholder="-을 제외하고 적어주세요"></label>
+            </div>
+            
+            <!-- 사용자 이메일 -->
+            <div>
+                <label>사용자 e-mail : <input type="text" class="My-Email" value="123456@gmial.com" readonly></label>
+            </div>
+
+            <!-- 사용자 최종학력 -->
+            <div>
+                <label>학력 : <select class="My-class" name="schjool">
+                    <option value="elementary">초등학교</option>
+                    <option value="middle">중학교</option>
+                    <option value="high">고등학교</option>
+                    <option value="University">대학교</option>
+                </select></label>
+            </div>
+
+            <!-- 프로핗 소개 변경 -->
+            <div>
+                <legend> 포로필 작성</legend>
+                    <input type="textarea" class="Profile_textarea" placeholder="본인의 프로필을 자유롭게 작성해보세요!">
+                
+            </div>
+            </form>
+        </div>
+    </MainBody>
+</body>
+</html>

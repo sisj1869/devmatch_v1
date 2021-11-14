@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <style>
+      #search-bar {
+        margin-top: 50px;
+      }
+
+      .Main-body {
+        margin-top: 50px;
+      }
+
+      .Main-body2 {
+          margin-top: 10px;
+      }
+
+      #Main-body3 {
+          display: none;
+      }
+
+      .card {
+          border: solid 1px;
+          margin-right: 5px;
+          padding: 5px;
+      }
+
+      #More {
+          margin-top: 50px;
+          margin-left: 45%;
+      }
+  </style>
+
+<script>
+    var bDisplay = true;
+    function doDisplay() {
+        var con = document.getElementById("Main-body3");
+        if(con.style.display=='block'){
+            con.style.display = 'none';
+        }else {
+            con.style.display = 'block';
+        }
+    }
+
+</script>
+</head>
+<body>
+    <h2>팀 메인화면</h2>
+
+<!-- Search-Bar -->
+    <header id="search-bar" class="container">
+        <form class="form-inline">
+            <div class="form-group" id="team-name">
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="팀 이름">
+            </div>
+            
+            <div class="form-group" id="team-field">
+                <select class="form-control">
+                    <option value="Front">프론트 앤드</option>
+                    <option value="Back">백앤드</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="team-stack">
+                <select class="form-control">
+                    <option value="Html">Html</option>
+                    <option value="Css">Css</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="difficulty">
+                <select class="form-control">
+                    <option value="EZ">쉬움</option>
+                    <option value="Normal">보통</option>
+                    <option value="hard">어려움</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-success">검색</button>
+        </form>
+    </header>
+<!-- Main-Body -->
+    <div class="container Main-body">
+        <div class="row Main-body-Box">
+        <div class="col card">
+            <p>프로젝트 같이 하실 분 구합니다!</p>
+            <p>매니저 : 유성일</p>
+            <p>팀기술 : 머닝러신 등</p>
+            <p>팀스택 : </p>
+            <p>난이도 : </p>
+        </div>
+        <div class="col card">
+            <p>프로젝트 같이 하실 분 구합니다!</p>
+            <p>매니저 : 유성일</p>
+            <p>팀기술 : 머닝러신 등</p>
+            <p>x팀스택 : </p>
+            <p>난이도 : </p>
+        </div>
+        <div class="col card">
+            <p>프로젝트 같이 하실 분 구합니다!</p>
+            <p>매니저 : 유성일</p>
+            <p>팀기술 : 머닝러신 등</p>
+            <p>팀스택 : </p>
+            <p>난이도 : </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="container Main-body2" id="hidden">
+        <div class="row Main-body-Box">
+        <div class="col card">
+            <p>프로젝트 같이 하실 분 구합니다!</p>
+            <p>매니저 : 유성일</p>
+            <p>팀기술 : 머닝러신 등</p>
+            <p>팀스택 : </p>
+            <p>난이도 : </p>
+        </div>
+        <div class="col card">
+            <p>프로젝트 같이 하실 분 구합니다!</p>
+            <p>매니저 : 유성일</p>
+            <p>팀기술 : 머닝러신 등</p>
+            <p>x팀스택 : </p>
+            <p>난이도 : </p>
+        </div>
+        <div class="col card">
+            <p>프로젝트 같이 하실 분 구합니다!</p>
+            <p>매니저 : 유성일</p>
+            <p>팀기술 : 머닝러신 등</p>
+            <p>팀스택 : </p>
+            <p>난이도 : </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="container Main-body2" id="Main-body3">
+        <div class="row Main-body-Box">
+        <div class="col card">
+            <p>프로젝트 같이 하실 분 구합니다!</p>
+            <p>매니저 : 유성일</p>
+            <p>팀기술 : 머닝러신 등</p>
+            <p>팀스택 : </p>
+            <p>난이도 : </p>
+        </div>
+        <div class="col card">
+            <p>프로젝트 같이 하실 분 구합니다!</p>
+            <p>매니저 : 유성일</p>
+            <p>팀기술 : 머닝러신 등</p>
+            <p>x팀스택 : </p>
+            <p>난이도 : </p>
+        </div>
+        <div class="col card">
+            <p>프로젝트 같이 하실 분 구합니다!</p>
+            <p>매니저 : 유성일</p>
+            <p>팀기술 : 머닝러신 등</p>
+            <p>팀스택 : </p>
+            <p>난이도 : </p>
+        </div>
+        </div>
+    </div>
+
+    <a href="javascript:doDisplay();"><button type="button" class="btn btn-primary btn-lg" id="More">더보기</button></a>
+
+
+</body>
+</html>
